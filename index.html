@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <h1>Equipos tecnologicos</h1>
+        <h1>Romana Tech</h1>
         <nav>
             <ul>
-                <li><a href="#incio">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -20,40 +20,40 @@
 
     <main>
         <section id="inicio">
-            <h2>Se bievenido a Romana Tech</h2>
-            <p>Donde podras encontrar los mejores equipos a precios asequibles</p>
+            <h2>Bienvenido a Romana Tech</h2>
+            <p>Encuentra los mejores equipos tecnológicos a precios asequibles.</p>
         </section>
 
         <section id="productos">
-            <h2>Nuestros productos</h2>
+            <h2>Nuestros Productos</h2>
             <div class="product-grid">
 
                 <div class="product-card">
-                    <img src="images/laptop1.jpg" alt="laptop">
+                    <img src="images/laptop1.jpg" alt="Laptop HP">
                     <h3>Laptop HP</h3>
-                    <p>Equipo practico para  estudiar y trabajar</p>
-                    <button>Ver mas</button>
+                    <p>Equipo práctico para estudiar y trabajar.</p>
+                    <button class="btn-ver-mas" data-product="Laptop HP">Ver más</button>
                 </div>
 
-                <div class="product-card"></div>
-                    <img src="images/ipad1.jpg" alt="ipad">
-                    <h3>Ipad Pro</h3>
-                    <p>Equipo perfecto para estudios</p>
-                    <button>Ver mas</button>
+                <div class="product-card">
+                    <img src="images/ipad1.jpg" alt="iPad Pro">
+                    <h3>iPad Pro</h3>
+                    <p>El equipo perfecto para tus estudios.</p>
+                    <button class="btn-ver-mas" data-product="iPad Pro">Ver más</button>
                 </div>
 
-                <div class="product-card"></div>
-                    <img src="images/samsung1.jpg" alt="samsung">
+                <div class="product-card">
+                    <img src="images/samsung1.jpg" alt="Samsung A54">
                     <h3>Samsung A54</h3>
-                    <p>El telefono que tanto estabas buscando</p>
-                    <button>Ver mas</button>
+                    <p>El teléfono que tanto estabas buscando.</p>
+                    <button class="btn-ver-mas" data-product="Samsung A54">Ver más</button>
                 </div>
             </div>
         </section>
 
         <section id="contacto">
-            <h2>Contactos</h2>
-            <form>
+            <h2>Contacto</h2>
+            <form id="contact-form">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
 
@@ -67,5 +67,11 @@
             </form>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Romana Tech. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
