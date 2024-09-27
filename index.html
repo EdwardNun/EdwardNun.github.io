@@ -1,77 +1,77 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romana Tech</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Romana Tech</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-3xl font-bold">Romana Tech</h1>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-white hover:underline">Inicio</a>
+                <a href="#" class="text-white hover:underline">Productos</a>
+                <a href="#" class="text-white hover:underline">Contacto</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Bienvenido a Romana Tech</h2>
-            <p>Encuentra los mejores equipos tecnológicos a precios asequibles.</p>
-        </section>
+    <!-- Main Content -->
+    <main class="container mx-auto py-8">
+        <h2 class="text-2xl font-semibold text-center mb-6">Bienvenido a Romana Tech</h2>
+        <p class="text-center text-gray-700 mb-10">Encuentra los mejores equipos tecnológicos a precios asequibles.</p>
 
-        <section id="productos">
-            <h2>Nuestros Productos</h2>
-            <div class="product-grid">
-
-                <div class="product-card">
-                    <img src="images/laptop1.jpg" alt="Laptop HP">
-                    <h3>Laptop HP</h3>
-                    <p>Equipo práctico para estudiar y trabajar.</p>
-                    <button class="btn-ver-mas" data-product="Laptop HP">Ver más</button>
+        <!-- Products Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" alt="Laptop HP" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">Laptop HP</h3>
+                    <p class="text-gray-600">Equipo práctico para estudiar y trabajar.</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
                 </div>
-
-                <div class="product-card">
-                    <img src="images/ipad1.jpg" alt="iPad Pro">
-                    <h3>iPad Pro</h3>
-                    <p>El equipo perfecto para tus estudios.</p>
-                    <button class="btn-ver-mas" data-product="iPad Pro">Ver más</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" alt="iPad Pro" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">iPad Pro</h3>
+                    <p class="text-gray-600">El equipo perfecto para tus estudios.</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
                 </div>
-
-                <div class="product-card">
-                    <img src="images/samsung1.jpg" alt="Samsung A54">
-                    <h3>Samsung A54</h3>
-                    <p>El teléfono que tanto estabas buscando.</p>
-                    <button class="btn-ver-mas" data-product="Samsung A54">Ver más</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400x300" alt="Samsung A54" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-bold mb-2">Samsung A54</h3>
+                    <p class="text-gray-600">El teléfono que tanto estabas buscando.</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Ver más</button>
                 </div>
             </div>
         </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Romana Tech. Todos los derechos reservados.</p>
+    <!-- Contact Form -->
+    <footer class="bg-gray-800 p-6">
+        <div class="container mx-auto text-white">
+            <h3 class="text-xl font-semibold mb-4">Contacto</h3>
+            <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <input type="text" placeholder="Nombre" class="p-2 rounded bg-gray-700 text-white">
+                <input type="email" placeholder="Email" class="p-2 rounded bg-gray-700 text-white">
+                <textarea placeholder="Mensaje" class="p-2 rounded bg-gray-700 text-white col-span-1 md:col-span-2"></textarea>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 col-span-1 md:col-span-1">Enviar</button>
+            </form>
+            <p class="text-center mt-6 text-gray-400">&copy; 2024 Romana Tech. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <script src="scripts/main.js"></script>
 </body>
 </html>
